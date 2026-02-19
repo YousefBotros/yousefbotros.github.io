@@ -33,10 +33,9 @@
       try {
         await navigator.clipboard.writeText(email);
         const old = copyBtn.textContent;
-        copyBtn.textContent = "Copied!";
+        copyBtn.textContent = "Copied";
         setTimeout(() => (copyBtn.textContent = old), 1200);
       } catch {
-        // fallback
         window.location.href = `mailto:${email}`;
       }
     });
