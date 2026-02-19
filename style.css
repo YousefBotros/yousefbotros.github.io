@@ -256,13 +256,13 @@ h1{
   pointer-events:none;
 }
 
-.profile-frame img{
-  width: 100%;
-  height: 100%;
-  display:block;
-  object-fit: cover;      /* fills the frame perfectly */
-object-position: center 40%;
-  transform: scale(1.02);
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 21%;
+    transform: scale(1.02);
 }
 
 /* Text UNDER the frame */
