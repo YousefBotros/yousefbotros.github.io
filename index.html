@@ -2,36 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Yousef Botros — AI Production Engineer | LLMs • RAG • Computer Vision • Flutter" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yousef Botros | AI Production Engineer</title>
+  <meta name="description" content="AI Production Engineer | LLMs, RAG, Computer Vision, Flutter AI Integration" />
+  <meta name="theme-color" content="#071A33" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=League+Spartan:wght@600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Spartan:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Geometric background -->
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Geometric Background -->
   <div class="bg-geo" aria-hidden="true"></div>
 
   <header class="header">
-    <div class="container nav">
-      <a class="brand" href="#home" aria-label="Go to top">
-        <span class="brand-dot"></span>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot" aria-hidden="true"></span>
         <span class="brand-name">Yousef Botros</span>
       </a>
 
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
 
-      <nav id="primary-nav" class="nav-links" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
+      <nav class="nav" id="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
         <a class="pill" href="https://www.github.com/yousefbotros" target="_blank" rel="noreferrer">GitHub</a>
@@ -39,103 +41,147 @@
     </div>
   </header>
 
-  <main id="home">
+  <main id="main">
     <!-- HERO -->
-    <section class="section hero">
+    <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-left">
-          <p class="kicker">AI Production Engineer</p>
-          <h1>Ship AI systems — not just demos.</h1>
-          <p class="sub">
-            I build production-ready AI: <b>LLMs</b>, <b>RAG</b>, and <b>Computer Vision</b> — and integrate AI features into <b>Flutter</b>
-            apps with measurable performance.
+          <p class="eyebrow">AI Production Engineer • LLMs • RAG • Computer Vision • Flutter</p>
+          <h1>Ship AI systems that work in production.</h1>
+          <p class="lede">
+            I build end-to-end AI pipelines—from data to deployment—focused on reliability, measurable impact,
+            and low-latency inference.
           </p>
 
-          <div class="cta-row">
-            <a class="btn primary" href="#projects">View Projects</a>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">See Projects</a>
             <a class="btn ghost" href="#contact">Contact</a>
+            <button class="btn ghost" id="copyEmail" type="button" data-copy="yousefbotros212@gmail.com">Copy Email</button>
             <a class="btn link" href="https://www.linkedin.com/in/yousef-botros" target="_blank" rel="noreferrer">LinkedIn →</a>
           </div>
 
-          <div class="chips">
-            <div class="chip">
-              <div class="chip-top">Computer Vision</div>
-              <div class="chip-big">mAP <span class="accent">0.79</span></div>
-              <div class="chip-sub">18k images • ONNX • Quantization</div>
-            </div>
-            <div class="chip">
-              <div class="chip-top">LLM / NLP</div>
-              <div class="chip-big">F1 <span class="accent">0.90</span></div>
-              <div class="chip-sub">RAG (FAISS) • FastAPI • p95 180ms</div>
-            </div>
-            <div class="chip">
-              <div class="chip-top">Flutter</div>
-              <div class="chip-big"><span class="accent">99.2%</span></div>
-              <div class="chip-sub">Crash-free • 65% coverage • −22% startup</div>
-            </div>
+          <div class="chips" aria-label="Highlights">
+            <span class="chip">2+ years experience</span>
+            <span class="chip">RAG + FAISS</span>
+            <span class="chip">ONNX + Quantization</span>
+            <span class="chip">Flutter Production</span>
           </div>
         </div>
 
-        <div class="hero-right">
-          <div class="profile-card">
-            <div class="hex-wrap" aria-hidden="true">
-              <div class="hex"></div>
-              <div class="hex-glow"></div>
+        <aside class="hero-right" aria-label="Key metrics">
+          <div class="stat-card">
+            <div class="stat">
+              <div class="stat-num">F1 0.90</div>
+              <div class="stat-label">Transformer fine-tuning (12k)</div>
             </div>
-
-            <div class="profile-meta">
-              <h2 class="profile-name">Yousef Botros</h2>
-              <p class="profile-role">AI Production Engineer</p>
-              <div class="profile-links">
-                <a href="https://www.github.com/yousefbotros" target="_blank" rel="noreferrer">GitHub</a>
-                <span class="dot">•</span>
-                <a href="https://www.linkedin.com/in/yousef-botros" target="_blank" rel="noreferrer">LinkedIn</a>
-              </div>
+            <div class="stat">
+              <div class="stat-num">55% → 75%</div>
+              <div class="stat-label">RAG answer accuracy uplift</div>
             </div>
-
-            <div class="quick">
-              <div class="quick-row"><span>Focus</span><b>LLMs • RAG • CV • Deployment</b></div>
-              <div class="quick-row"><span>Stack</span><b>Python • FastAPI • Docker • Flutter</b></div>
-              <div class="quick-row"><span>Location</span><b>Egypt</b></div>
+            <div class="stat">
+              <div class="stat-num">240ms → 90ms</div>
+              <div class="stat-label">ONNX p95 inference optimization</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">99.2%</div>
+              <div class="stat-label">Crash-free sessions (Flutter)</div>
             </div>
           </div>
 
-          <div class="mini-note">
-            <b>Open to</b> internships, collaborations, and AI product roles.
+          <div class="mini-card">
+            <div class="mini-title">Links</div>
+            <div class="mini-links">
+              <a href="https://www.github.com/yousefbotros" target="_blank" rel="noreferrer">GitHub</a>
+              <span class="dot">•</span>
+              <a href="https://www.linkedin.com/in/yousef-botros" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="section">
-      <div class="container split">
-        <div>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
           <h2>About</h2>
-          <p class="lead">
-            I bridge research and production: data pipelines, model training, evaluation, deployment, optimization,
-            and monitoring. I care about <b>quality</b> and <b>reliability</b>: F1/mAP, p95 latency, throughput,
-            error rate, and drift signals.
+          <p class="muted">
+            I turn AI ideas into reliable products: data pipelines, training, evaluation, deployment, optimization,
+            and monitoring. I care about metrics like F1/mAP, p95 latency, throughput, and error rate.
           </p>
-          <div class="mini-grid">
-            <div class="mini-card">
-              <div class="mini-title">What I optimize</div>
-              <div class="mini-body">Latency • Cost • Quality • Reliability</div>
-            </div>
-            <div class="mini-card">
-              <div class="mini-title">What I ship</div>
-              <div class="mini-body">APIs • Dashboards • Mobile AI features</div>
-            </div>
-          </div>
         </div>
-        <div class="card">
-          <h3>What I deliver</h3>
-          <ul class="bullets">
-            <li>Production APIs (FastAPI) + Dockerized deployments</li>
-            <li>RAG pipelines (embeddings + FAISS/vector search)</li>
-            <li>Computer Vision inference optimized with ONNX/quantization</li>
-            <li>Flutter integration for AI-powered mobile UX</li>
-          </ul>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>What I build</h3>
+            <ul class="bullets">
+              <li>Production APIs (FastAPI) + Dockerized deployments</li>
+              <li>RAG systems (embeddings + FAISS/vector search)</li>
+              <li>Computer Vision pipelines (detection + evaluation + inference)</li>
+              <li>Flutter apps with clean architecture + testing</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>What I optimize</h3>
+            <ul class="bullets">
+              <li>Latency and throughput (p95 targets)</li>
+              <li>Model quality (F1, mAP, recall)</li>
+              <li>Stability (crash-free, error rate)</li>
+              <li>Reproducibility (clean experiments + versioning)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="muted">Keyword-rich, grouped by what I actually deliver.</p>
+        </div>
+
+        <div class="grid three">
+          <article class="card">
+            <h3>AI / ML</h3>
+            <div class="tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">RAG</span>
+              <span class="tag">Embeddings</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Object Detection</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Production / MLOps</h3>
+            <div class="tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Docker</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Git</span>
+              <span class="tag">Model Optimization</span>
+              <span class="tag">Monitoring</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Mobile</h3>
+            <div class="tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">State Management</span>
+              <span class="tag">Testing</span>
+              <span class="tag">Clean Architecture</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -145,34 +191,34 @@
       <div class="container">
         <div class="section-head">
           <h2>Projects</h2>
-          <p class="muted">Clean, metric-driven case studies. Replace the placeholder links when ready.</p>
+          <p class="muted">Add your real repo/demo links when ready.</p>
         </div>
 
-        <div class="grid">
+        <div class="grid two">
           <article class="card project">
-            <div class="tag">Computer Vision</div>
+            <div class="badge">Computer Vision</div>
             <h3>Object Detection Pipeline (ROV)</h3>
             <ul class="bullets">
-              <li>Trained YOLO-style model on <b>18k images</b> → <b>mAP 0.79</b> (recall +22%).</li>
-              <li>Optimized inference <b>240ms → 90ms p95</b> via <b>ONNX</b> + quantization + batching.</li>
-              <li>End-to-end pipeline: data → labeling → training → evaluation → deployment.</li>
+              <li>Trained YOLO-style model on <b>18k images</b> → <b>mAP 0.79</b>.</li>
+              <li>Optimized inference <b>240ms → 90ms p95</b> using ONNX + quantization + batching.</li>
+              <li>Built full pipeline: data → labeling → training → evaluation → deployment.</li>
             </ul>
             <div class="meta">
               <span>PyTorch</span><span>OpenCV</span><span>ONNX</span><span>Docker</span>
             </div>
             <div class="actions">
-              <a class="btn small ghost" href="#" aria-disabled="true" title="Add your repo link">GitHub</a>
-              <a class="btn small primary" href="#" aria-disabled="true" title="Add a demo link">Demo</a>
+              <a class="btn small ghost" href="#" aria-disabled="true">GitHub</a>
+              <a class="btn small primary" href="#" aria-disabled="true">Demo</a>
             </div>
           </article>
 
           <article class="card project">
-            <div class="tag cyan">LLM / RAG</div>
+            <div class="badge cyan">LLM / RAG</div>
             <h3>RAG Document Q&amp;A</h3>
             <ul class="bullets">
               <li>Fine-tuned Transformers → <b>F1 0.90</b> on <b>12k</b> samples.</li>
-              <li>Built RAG (embeddings + <b>FAISS</b>) → accuracy <b>55% → 75%</b>.</li>
-              <li>Deployed with FastAPI: <b>p95 180ms</b>, <b>99% uptime</b> (testing).</li>
+              <li>Built RAG with embeddings + <b>FAISS</b> → accuracy <b>55% → 75%</b>.</li>
+              <li>Deployed with FastAPI → <b>p95 180ms</b>, stable testing uptime.</li>
             </ul>
             <div class="meta">
               <span>Transformers</span><span>FAISS</span><span>FastAPI</span><span>Docker</span>
@@ -184,11 +230,11 @@
           </article>
 
           <article class="card project">
-            <div class="tag blue">Flutter</div>
+            <div class="badge blue">Flutter</div>
             <h3>Flutter Production App</h3>
             <ul class="bullets">
               <li>Built <b>18+ screens</b> across <b>6 modules</b> (auth, pagination, errors).</li>
-              <li>Clean architecture refactor: duplicate code <b>−30%</b>.</li>
+              <li>Refactored to clean architecture → duplicate code <b>−30%</b>.</li>
               <li>Cold start <b>−22%</b>, tests <b>65%</b>, crash-free <b>99.2%</b>.</li>
             </ul>
             <div class="meta">
@@ -201,15 +247,15 @@
           </article>
 
           <article class="card project">
-            <div class="tag">Machine Learning</div>
+            <div class="badge">Machine Learning</div>
             <h3>ML Classification + Streamlit</h3>
             <ul class="bullets">
-              <li>Processed <b>45k rows</b>, feature engineering, baseline → tuned models.</li>
+              <li>Processed <b>45k rows</b>, feature engineering, tuned models.</li>
               <li><b>F1 0.78 → 0.87</b>, <b>AUC 0.90</b>.</li>
               <li>Streamlit demo served predictions in <b>&lt; 200ms</b> locally.</li>
             </ul>
             <div class="meta">
-              <span>scikit-learn</span><span>Pandas</span><span>Streamlit</span><span>SQL</span>
+              <span>scikit-learn</span><span>Pandas</span><span>Streamlit</span><span>Python</span>
             </div>
             <div class="actions">
               <a class="btn small ghost" href="#" aria-disabled="true">GitHub</a>
@@ -218,77 +264,17 @@
           </article>
 
           <article class="card project wide">
-            <div class="tag gold">Healthcare</div>
+            <div class="badge gold">Healthcare</div>
             <h3>MedCare — Medical AI Project</h3>
             <p class="muted">
-              A healthcare-focused prototype to support medical Q&amp;A and patient-friendly summaries with safety disclaimers,
-              uncertainty handling, and retrieval over medical documents/guidelines to reduce hallucinations.
+              Add your exact medical project details here (RAG medical assistant / medical CV / prediction).
+              Keep it grounded and include evaluation + safety disclaimer if it’s clinical.
             </p>
-            <div class="mini-list">
-              <div class="mini-pill">RAG</div>
-              <div class="mini-pill">Embeddings</div>
-              <div class="mini-pill">FAISS</div>
-              <div class="mini-pill">FastAPI</div>
-              <div class="mini-pill">Docker</div>
+            <div class="meta">
+              <span>RAG</span><span>Embeddings</span><span>FAISS</span><span>FastAPI</span><span>Docker</span>
             </div>
-            <p class="muted small">
-              Metrics (edit later): test set <b>[N]</b>, grounded accuracy <b>[X%]</b>, p95 latency <b>[X ms]</b>
-            </p>
+            <p class="muted small">Metrics (edit): test set [N], grounded accuracy [X%], p95 latency [X ms]</p>
           </article>
-
-          <article class="card project wide">
-            <div class="tag cyan">Agents</div>
-            <h3>Multi‑Step AI Agent System (Final Project)</h3>
-            <p class="muted">
-              Built a multi-step agent workflow combining CSV EDA, RAG over PDFs (MiniLM + FAISS),
-              Ollama-hosted LLM (Llama 3.1), external APIs, automated PDF reporting, dashboard updates,
-              email drafting, and an evaluation harness.
-            </p>
-            <div class="mini-list">
-              <div class="mini-pill">Python</div>
-              <div class="mini-pill">FAISS</div>
-              <div class="mini-pill">RAG</div>
-              <div class="mini-pill">Ollama</div>
-              <div class="mini-pill">PDF Reports</div>
-              <div class="mini-pill">Evaluation</div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-head">
-          <h2>Skills</h2>
-          <p class="muted">Organized for recruiter search + real delivery.</p>
-        </div>
-
-        <div class="grid skills">
-          <div class="card">
-            <h3>Production / MLOps</h3>
-            <div class="pills">
-              <span>FastAPI</span><span>Docker</span><span>CI/CD</span><span>Monitoring</span>
-              <span>Linux</span><span>Git</span><span>APIs</span><span>MLflow</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>LLMs / NLP</h3>
-            <div class="pills">
-              <span>Transformers</span><span>RAG</span><span>Embeddings</span><span>FAISS</span>
-              <span>Fine-tuning</span><span>Prompting</span><span>Evaluation</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>CV + Mobile</h3>
-            <div class="pills">
-              <span>Computer Vision</span><span>Object Detection</span><span>PyTorch</span><span>OpenCV</span>
-              <span>ONNX</span><span>Quantization</span><span>Flutter</span><span>Dart</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -297,20 +283,20 @@
     <section class="section" id="experience">
       <div class="container">
         <div class="section-head">
-          <h2>Experience (Highlights)</h2>
-          <p class="muted">Compact timeline with measurable outcomes.</p>
+          <h2>Experience</h2>
+          <p class="muted">Highlights with measurable outcomes.</p>
         </div>
 
         <div class="timeline">
           <div class="t-item">
             <div class="t-dot" aria-hidden="true"></div>
-            <div class="t-content card">
+            <div class="card">
               <div class="t-top">
                 <h3>Computer Vision Engineer — HYDROTRON ROV</h3>
-                <span class="t-date">2024 — 2025</span>
+                <span class="t-date">2024–2025</span>
               </div>
               <ul class="bullets">
-                <li>mAP <b>0.79</b> on <b>18k</b> images; inference <b>90ms p95</b> after ONNX optimization.</li>
+                <li>mAP <b>0.79</b> on <b>18k</b> images; inference <b>90ms p95</b> after optimization.</li>
                 <li>Owned data → training → evaluation → deployment workflow.</li>
               </ul>
             </div>
@@ -318,7 +304,7 @@
 
           <div class="t-item">
             <div class="t-dot" aria-hidden="true"></div>
-            <div class="t-content card">
+            <div class="card">
               <div class="t-top">
                 <h3>NLP Engineer Intern — NTI</h3>
                 <span class="t-date">2025</span>
@@ -332,7 +318,7 @@
 
           <div class="t-item">
             <div class="t-dot" aria-hidden="true"></div>
-            <div class="t-content card">
+            <div class="card">
               <div class="t-top">
                 <h3>Software Engineering Intern — Sprints</h3>
                 <span class="t-date">2025</span>
@@ -346,9 +332,9 @@
         </div>
 
         <div class="callout">
-          <div class="callout-left">
+          <div>
             <h3>Want to collaborate?</h3>
-            <p class="muted">I’m open to internships, collaborations, and AI product roles.</p>
+            <p class="muted">Open to internships, collaborations, and AI product roles.</p>
           </div>
           <a class="btn primary" href="#contact">Let’s talk</a>
         </div>
@@ -360,42 +346,40 @@
       <div class="container">
         <div class="section-head">
           <h2>Contact</h2>
-          <p class="muted">Let’s build something useful.</p>
+          <p class="muted">Send a message or connect on LinkedIn.</p>
         </div>
 
-        <div class="grid contact">
-          <div class="card">
-            <h3>Reach me</h3>
+        <div class="grid two">
+          <article class="card">
+            <h3>Details</h3>
             <div class="contact-list">
               <div><span>Email</span><a href="mailto:yousefbotros212@gmail.com">yousefbotros212@gmail.com</a></div>
-              <div><span>Phone</span><a href="tel:+201276363961">+20 127 636 3961</a></div>
-              <div><span>LinkedIn</span><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/yousef-botros">linkedin.com/in/yousef-botros</a></div>
-              <div><span>GitHub</span><a target="_blank" rel="noreferrer" href="https://www.github.com/yousefbotros">github.com/yousefbotros</a></div>
+              <div><span>LinkedIn</span><a href="https://www.linkedin.com/in/yousef-botros" target="_blank" rel="noreferrer">/in/yousef-botros</a></div>
+              <div><span>GitHub</span><a href="https://www.github.com/yousefbotros" target="_blank" rel="noreferrer">/yousefbotros</a></div>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <h3>Quick message</h3>
-            <p class="muted small">This form opens your email app (no backend needed).</p>
-            <form class="form" id="emailForm">
+            <p class="muted small">This opens your email app (no backend needed).</p>
+            <form id="emailForm" class="form">
               <label>
                 Your name
-                <input type="text" id="name" placeholder="Your name" required />
+                <input id="name" type="text" placeholder="Your name" required />
               </label>
               <label>
                 Message
                 <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
               </label>
               <button class="btn primary" type="submit">Send</button>
-              <p class="muted small">Tip: You can also DM me on LinkedIn.</p>
             </form>
-          </div>
+          </article>
         </div>
 
         <footer class="footer">
           <span>© <span id="year"></span> Yousef Botros</span>
-          <span class="footer-dot">•</span>
-          <a href="#home">Back to top</a>
+          <span class="dot">•</span>
+          <a href="#top">Back to top</a>
         </footer>
       </div>
     </section>
