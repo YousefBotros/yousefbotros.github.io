@@ -99,32 +99,46 @@
         <!-- RIGHT SIDE CARD -->
         <aside class="hero-right" aria-label="Profile">
           <div class="profile-card">
-            <!-- BIG COVER IMAGE (fills circled area) -->
-            <div class="profile-hero">
+            <!-- BOOK FRAME: image fills the entire frame -->
+            <div class="profile-frame" aria-label="Profile photo frame">
               <img src="assets/profile.jpg" alt="Yousef Botros" loading="lazy" />
-              <div class="profile-hero-overlay">
-                <h2 class="profile-name">Yousef Botros</h2>
-                <p class="profile-role">AI Production Engineer with Mobile AI Integration</p>
-                <div class="profile-links">
-                  <a href="https://www.github.com/yousefbotros" target="_blank" rel="noreferrer">GitHub</a>
-                  <span class="dot">•</span>
-                  <a href="https://www.linkedin.com/in/yousef-botros" target="_blank" rel="noreferrer">LinkedIn</a>
-                </div>
-              </div>
             </div>
 
-            <div class="mini-grid">
-              <div class="mini-card">
-                <div class="mini-title">Focus</div>
-                <div class="mini-body">LLMs • RAG • CV • Deployment</div>
+            <!-- TEXT UNDER IMAGE -->
+            <div class="profile-under">
+              <h2 class="profile-name">Yousef Botros</h2>
+              <p class="profile-role">AI Production Engineer with Mobile AI Integration</p>
+
+              <div class="profile-links">
+                <a href="https://www.github.com/yousefbotros" target="_blank" rel="noreferrer">GitHub</a>
+                <span class="dot">•</span>
+                <a href="https://www.linkedin.com/in/yousef-botros" target="_blank" rel="noreferrer">LinkedIn</a>
               </div>
-              <div class="mini-card">
-                <div class="mini-title">Stack</div>
-                <div class="mini-body">Python • FastAPI • Docker • Flutter</div>
+
+              <div class="profile-subtitle">Keywords</div>
+              <div class="profile-pills" aria-label="Keywords">
+                <span>AI Production</span>
+                <span>LLMs</span>
+                <span>RAG</span>
+                <span>Computer Vision</span>
+                <span>Flutter</span>
+                <span>FastAPI</span>
+                <span>Docker</span>
               </div>
-              <div class="mini-card">
-                <div class="mini-title">Location</div>
-                <div class="mini-body">Cairo, Egypt</div>
+
+              <div class="profile-subtitle">Inputs I handle</div>
+              <div class="profile-pills" aria-label="Inputs">
+                <span>YouTube</span>
+                <span>PDFs</span>
+                <span>Documents</span>
+                <span>Images</span>
+                <span>Audio/Voice</span>
+                <span>Spreadsheets</span>
+              </div>
+
+              <div class="profile-row">
+                <span class="profile-row-k">Location</span>
+                <span class="profile-row-v">Cairo, Egypt</span>
               </div>
             </div>
           </div>
@@ -219,11 +233,10 @@
               <span class="tag">Dart</span>
               <span class="tag">REST APIs</span>
               <span class="tag">Firebase</span>
-              <span class="tag">State Management</span>
+              <span class="tag">Cubit</span>
               <span class="tag">Clean Architecture</span>
               <span class="tag">Testing</span>
               <span class="tag">UI/UX</span>
-              <span class="tag">Android Studio</span>
             </div>
           </article>
         </div>
@@ -274,7 +287,7 @@
               <li>Creates targeted Q&A from learning materials</li>
             </ul>
             <div class="meta">
-              <span>RAG</span><span>Summarization</span><span>Q&A</span><span>Embeddings</span>
+              <span>YouTube</span><span>RAG</span><span>Summarization</span><span>Q&A</span>
             </div>
           </article>
 
@@ -290,58 +303,6 @@
               <span>PyTorch</span><span>OpenCV</span><span>ONNX</span><span>Docker</span>
             </div>
           </article>
-
-          <article class="card project">
-            <div class="badge cyan">LLM / RAG</div>
-            <h3>RAG Document Q&A</h3>
-            <ul class="bullets">
-              <li>Transformer fine-tuning: F1 0.90 on 12k samples</li>
-              <li>Embeddings + FAISS: accuracy 55% → 75%</li>
-              <li>FastAPI serving: p95 180ms, 99% uptime in testing</li>
-            </ul>
-            <div class="meta">
-              <span>Transformers</span><span>FAISS</span><span>FastAPI</span><span>Docker</span>
-            </div>
-          </article>
-
-          <article class="card project">
-            <div class="badge">ML</div>
-            <h3>ML Classification + Streamlit</h3>
-            <ul class="bullets">
-              <li>45k rows cleaned + engineered features</li>
-              <li>F1 0.78 → 0.87, AUC 0.90 with CV tuning</li>
-              <li>Streamlit demo: &lt; 200ms local inference</li>
-            </ul>
-            <div class="meta">
-              <span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Streamlit</span>
-            </div>
-          </article>
-
-          <article class="card project">
-            <div class="badge blue">Flutter</div>
-            <h3>Weather Forecasting App</h3>
-            <ul class="bullets">
-              <li>Real-time weather predictions via API integration</li>
-              <li>Production-ready UI architecture with Cubit state management</li>
-              <li>Optimized responsiveness and error handling</li>
-            </ul>
-            <div class="meta">
-              <span>Flutter</span><span>Cubit</span><span>REST APIs</span>
-            </div>
-          </article>
-
-          <article class="card project">
-            <div class="badge blue">Flutter</div>
-            <h3>Quiz Platform</h3>
-            <ul class="bullets">
-              <li>Timed quizzes, categories, leaderboards, score tracking</li>
-              <li>Modular clean architecture for scalability</li>
-              <li>Ideal for education or entertainment apps</li>
-            </ul>
-            <div class="meta">
-              <span>Flutter</span><span>Clean Architecture</span><span>State Management</span>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -355,23 +316,19 @@
         </div>
 
         <div class="timeline">
-          <!-- Keep your experience blocks as you already have them -->
-          <!-- (No forms/callouts here) -->
-
           <div class="t-item">
             <div class="t-dot" aria-hidden="true"></div>
             <div class="t-content card">
               <div class="t-top">
-                <h3>Community Ambassador (Events, Marketing, Partnerships) — iCareer</h3>
+                <h3>Community Ambassador — iCareer</h3>
                 <span class="t-date">Sep 2025 – Present • Cairo, Egypt</span>
               </div>
               <ul class="bullets">
-                <li>Increased event registrations to 900+ across 7 sessions through social media campaigns and campus outreach.</li>
-                <li>Coordinated speakers, logistics, and communications to deliver events with 90%+ attendee satisfaction.</li>
-                <li>Tracked reach, clicks, registrations, and attendance to improve engagement by 35%.</li>
+                <li>Increased registrations to 900+ across 7 sessions via campaigns and outreach.</li>
+                <li>Coordinated speakers, logistics, and communications for on-time delivery.</li>
               </ul>
               <div class="meta">
-                <span>Event Marketing</span><span>Community</span><span>Partnerships</span><span>Leadership</span>
+                <span>Community</span><span>Marketing</span><span>Leadership</span>
               </div>
             </div>
           </div>
@@ -380,16 +337,16 @@
             <div class="t-dot" aria-hidden="true"></div>
             <div class="t-content card">
               <div class="t-top">
-                <h3>NLP Engineer Intern (Transformers, RAG, FAISS, FastAPI) — NTI</h3>
+                <h3>NLP Engineer Intern — NTI</h3>
                 <span class="t-date">Aug 2025 – Oct 2025 • Cairo, Egypt</span>
               </div>
               <ul class="bullets">
-                <li>Fine-tuned Transformer models for text classification and achieved F1 0.90 on 12k samples.</li>
-                <li>Built a RAG system using embeddings and FAISS; improved answer accuracy from 55% to 75% on a test set.</li>
-                <li>Deployed an inference API with FastAPI; reached p95 latency 180 ms and 99% uptime in testing.</li>
+                <li>Fine-tuned transformers; reached F1 0.90 on 12k samples.</li>
+                <li>Built embeddings + FAISS RAG; accuracy improved 55% → 75%.</li>
+                <li>FastAPI deployment; p95 latency ~180ms in testing.</li>
               </ul>
               <div class="meta">
-                <span>NLP</span><span>Transformers</span><span>RAG</span><span>FAISS</span><span>FastAPI</span><span>Docker</span>
+                <span>Transformers</span><span>RAG</span><span>FAISS</span><span>FastAPI</span><span>Docker</span>
               </div>
             </div>
           </div>
@@ -398,38 +355,19 @@
             <div class="t-dot" aria-hidden="true"></div>
             <div class="t-content card">
               <div class="t-top">
-                <h3>Mobile Application Flutter Intern — Sprints</h3>
+                <h3>Flutter Intern — Sprints</h3>
                 <span class="t-date">Jul 2025 – Sep 2025 • Egypt</span>
               </div>
               <ul class="bullets">
-                <li>Built Flutter features across 18+ screens and 6 modules (auth, pagination, errors).</li>
-                <li>Refactored to clean architecture; reduced duplicated code by 30%.</li>
-                <li>Optimized performance; reduced cold start by 22%.</li>
+                <li>Built 18+ screens across 6 modules with REST APIs.</li>
+                <li>Clean architecture refactor; duplication reduced ~30%.</li>
+                <li>Cold start improved ~22% through profiling and fixes.</li>
               </ul>
               <div class="meta">
-                <span>Flutter</span><span>Dart</span><span>REST APIs</span><span>Clean Architecture</span><span>Testing</span>
+                <span>Flutter</span><span>Dart</span><span>REST APIs</span><span>Clean Architecture</span>
               </div>
             </div>
           </div>
-
-          <div class="t-item">
-            <div class="t-dot" aria-hidden="true"></div>
-            <div class="t-content card">
-              <div class="t-top">
-                <h3>Computer Vision Engineer (PyTorch, OpenCV, ONNX) — HYDROTRON ROV</h3>
-                <span class="t-date">Sep 2024 – Sep 2025 • Cairo, Egypt</span>
-              </div>
-              <ul class="bullets">
-                <li>Trained YOLO-style model on 18k images; achieved mAP 0.79.</li>
-                <li>Optimized inference from 240 ms to 90 ms p95 using ONNX + quantization.</li>
-                <li>Owned data → training → evaluation → deployment workflow.</li>
-              </ul>
-              <div class="meta">
-                <span>PyTorch</span><span>OpenCV</span><span>ONNX</span><span>Docker</span>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -464,7 +402,7 @@
       </div>
     </section>
 
-    <!-- CONTACT (NO FORM) -->
+    <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="container">
         <div class="section-head">
@@ -480,7 +418,7 @@
               <div><span>Phone</span><a href="tel:+201276363961">+20 127 636 3961</a></div>
               <div><span>LinkedIn</span><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/yousef-botros">linkedin.com/in/yousef-botros</a></div>
               <div><span>GitHub</span><a target="_blank" rel="noreferrer" href="https://www.github.com/yousefbotros">github.com/yousefbotros</a></div>
-              <div><span>Languages</span><span>Arabic (Native), English (Professional), Russian (Elementary)</span></div>
+              <div><span>Languages</span><span>Arabic (Native), English (Professional)</span></div>
             </div>
 
             <div class="btn-row">
