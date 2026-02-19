@@ -33,7 +33,6 @@
         copyBtn.textContent = "Copied";
         setTimeout(() => (copyBtn.textContent = old), 1200);
       } catch {
-        // fallback
         const ta = document.createElement("textarea");
         ta.value = email;
         document.body.appendChild(ta);
