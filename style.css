@@ -261,7 +261,7 @@ h1{
   height: 100%;
   display:block;
   object-fit: cover;      /* fills the frame perfectly */
-object-position: center 25%;
+object-position: center 40%;
   transform: scale(1.02);
 }
 
